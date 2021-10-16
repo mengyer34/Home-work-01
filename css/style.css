@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Signika+Negative:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body {
+    font-size: 1.2rem; /* 1rem = 16px */
+    background: #eee;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem 9%;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.header .logo {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: grey;
+}
+
+.header .logo i {
+    color: orange;
+}
+
+.header .navbar a {
+    color:grey;
+    margin: 0 1rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.header .navbar a:hover {
+    color: #fff;
+    background: orange;
+}
+
+.header .icons div{
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: grey;
+    width: 3rem;
+    height: 3rem;
+    background: #eee;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3rem;
+    margin: 0 0.2rem;
+    transition: 1s;
+}
+
+.header .icons div:hover {
+    background: orange;
+    color: #fff;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/banner-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 10rem 0;
+    width: 100%;
+    height: 60vh;
+}
+
+.home .content {
+    text-align: center;
+    width: 50rem;
+}
+
+.home .content h3 {
+    color: rgb(46, 46, 46);
+    font-size: 3rem;
+}
+
+.home .content h3 span {
+    color: orange;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: rgb(71, 71, 71);
+}
+
+.home .content button {
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.9rem 1.5rem;
+    background: orange;
+    color: #fff;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+    color: black;
+    padding-bottom: 3rem;
+    margin: 5rem 0 1rem;
+}
+
+.heading span {
+    color: #fff;
+    background: orange;
+    padding: 0.5rem 3rem;
+    clip-path: polygon(88% 0, 100% 50%, 87% 100%, 0% 100%, 9% 48%, 0% 0%);
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 0 5rem;
+}
+
+.product .box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 5rem;
+}
+.box-container .box img {
+    width: 100%;
+    height: 12rem;
+}
+.box-container .box {
+    background: #fff;
+    line-height: 2rem;
+    text-align: center;
+    transition: 0.5s;
+    padding: 1rem;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.3);
+
+}
+.box-container .box:hover {
+    cursor: pointer;
+    background: orange;
+    color: #fff;
+    box-shadow: 0 0.9rem 1.1rem rgba(0, 0, 0, 0.3);
+}
+.box-container .box:hover i{
+    color: #fff;
+}
+.box-container .box:hover button{
+    background: rgb(88, 88, 88);
+    color: #fff;
+}
+
+.box-container .box h3 {
+    font-size: 2rem;
+    color: rgb(75, 75, 75);
+
+}
+
+
+.box-container .box button{
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    background: none;
+    transition: 1s;
+    background: orange;
+    color: #fff;
+}
+.box-container .box button:hover{ 
+    color: #fff;
+}
+
+.box-container .box i {
+    color: orange;
+    cursor: pointer;
+}
+
+.product .box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 0 5rem;
+}
+.product .box-container .box h3{
+    font-size: 1.7rem;
+    color: black;
+}
+.product .box-container .box h4{
+    font-size: 1.5;
+    font-weight: normal;
+    color: grey;
+}
+
+.product .box-container .box .footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+.product .box-container .box .footer-box button {
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: orange;
+    padding: 8px;
+    border-radius: 0px;
+    color: #fff;
+    margin-top: 1rem;
+}
+.product .box-container .box .footer-box button:hover {
+    background: #fff;
+    color: orange;
+}
+.product .box-container .box .footer-box .btn-cart {
+    background: black;
+}
+
+
+
+.categories .box-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.categories .box-container h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.categories .box-container h4 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: rgb(173, 173, 173);
+}
+.categories .box-container button {
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: orange;
+    padding: 8px;
+    border-radius: 0px;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.review .box-container img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
