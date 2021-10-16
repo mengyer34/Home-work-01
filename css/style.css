@@ -105,8 +105,11 @@ body {
     padding: 0.9rem 1.5rem;
     background: orange;
     color: #fff;
+    transition: 1s;
 }
-
+.home .content button:hover {
+    background: #000;
+}
 .heading {
     text-align: center;
     font-size: 2rem;
@@ -159,7 +162,8 @@ body {
     color: #fff;
 }
 .box-container .box:hover button{
-    background: rgb(88, 88, 88);
+    background: orange;
+    border: 1px solid;
     color: #fff;
 }
 
@@ -171,7 +175,7 @@ body {
 
 
 .box-container .box button{
-    font-size: 1.4rem;
+    font-size: 1rem;
     cursor: pointer;
     border: none;
     padding: 1rem;
@@ -182,6 +186,7 @@ body {
 }
 .box-container .box button:hover{ 
     color: #fff;
+    background: #000;
 }
 
 .box-container .box i {
@@ -210,7 +215,7 @@ body {
     justify-content: space-between;
 }
 .product .box-container .box .footer-box button {
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
     background: orange;
     padding: 8px;
@@ -245,7 +250,7 @@ body {
     color: rgb(173, 173, 173);
 }
 .categories .box-container button {
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
     background: orange;
     padding: 8px;
@@ -258,4 +263,85 @@ body {
     width: 160px;
     height: 160px;
     border-radius: 50%;
+}
+.blog .box-container .box {
+    padding: 0;
+    text-align: left;
+}
+
+.blog .box-container h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+}
+.blog .box-container .decription {
+    padding: 1rem;
+}
+.blog .box-container .decription button {
+    margin: 1rem 0 0;
+}
+.blog .box-container .decription .h-box {
+    display: flex;
+    justify-content: space-between;
+}
+.blog .box-container .decription .line {
+    width: 100%;
+    height: 1px;
+    background: grey;
+    margin: 1rem 0;
+}
+
+
+
+.footer {
+    background: #fff;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.footer .container-group .header-footer i {
+    color: orange;
+}
+.footer .container-group .header-footer .link-c a i{
+    padding: 1rem;
+    background: #ccc;
+    color: #000;
+    transition: 0.8s;
+}
+.footer .container-group .header-footer .link-c a:hover i{
+    background: orange;
+    color: #fff;
+}
+.footer .container-group {
+    line-height: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+   
+}
+.footer .container-group p{
+    color: rgb(90, 90, 90);
+   
+}
+.footer .container-group form {
+    box-sizing: border-box;
+    width: 90%;
+}
+.footer .container-group form input{
+    padding: 1rem;
+    width: 100%;
+    background: #ccc;
+}
+
+.footer .container-group form button{
+    padding: 1rem 2rem;
+    background: orange;
+    margin: 1rem 0;
+    transition: 1s;
+}
+.footer .container-group form button:hover{
+    background: black;
+    color: #eee;
 }
